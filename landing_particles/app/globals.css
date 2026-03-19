@@ -1,5 +1,15 @@
+@import "tailwindcss";
 
-@tailwind utilities;
+@theme {
+  --color-secondary: #f5741c;
+  --color-darkBg: #131424;
+
+  --background-image-gradient-cover: linear-gradient(
+    90.21deg,
+    rgba(245, 10, 151, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+}
 
 html {
   height: 100%; 
@@ -23,8 +33,6 @@ main {
   background-color: #f5741c;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@utility text-balance {
+    text-wrap: balance
 }
