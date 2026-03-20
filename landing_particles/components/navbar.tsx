@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { itemsNavbar } from "@/data";
 
 const Navbar = () =>{
-    const router = usePathname
+    const router = usePathname()
+
     return (
         <div className="fixed z-40 flex-col items-center justify-center w-full mt-auto h-max bottom-10">
             <nav>
