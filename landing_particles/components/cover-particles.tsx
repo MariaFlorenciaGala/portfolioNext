@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
 
-
 const CoverParticles = () => {
 
     const [ init, setInit ] = useState(false);
@@ -16,7 +15,6 @@ const CoverParticles = () => {
             setInit(true);
         });
     }, []);
-   
 
     return (
         init && 
