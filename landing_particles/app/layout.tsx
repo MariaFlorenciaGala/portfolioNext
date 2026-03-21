@@ -1,25 +1,25 @@
 /*Layout principal de la aplicación
+
 -Define la estructura base de HTML
--Configura los metadatos globales 
 -Aplica la tipografía global
 -Incluye componentes que persisten como el navbar
--Renderiza los contenidos dinámicosde cada página
+-Renderiza los contenidos dinámicosde cada página.
+-Configura los metadatos globales 
 */
-import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
+import { Metadata } from "next";
 
 import Navbar from "@/components/navbar";
+
+import { seoData } from "@/data";
 
 import "./globals.css";
 
 //Fuente global 
 const urbanist = Urbanist({subsets: ['latin']});
 
-//Metadatos globales para el SEO
-export const metadata: Metadata = {
-  title: "👩‍💻Maria Florencia Gala",
-  description: "Portfolio por Maria Florencia Gala",
-};
+
+export const metadata: Metadata = seoData;
 
 export default function RootLayout({
   children,

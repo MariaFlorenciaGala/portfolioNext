@@ -13,13 +13,14 @@ Navbar component es una barra de navegación fija en la parte inferior de la pan
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { itemsNavbar } from "@/data";
+import MotionTransition from "./transition-component";
 
 const Navbar = () =>{
     //Obtiene la ruta actual de la aplicación, además lo utilicé para resaltar el ítem activo (icono) en la navbar
     const router = usePathname()
 
     return (
-        <div className="fixed z-40 flex-col items-center justify-center w-full mt-auto h-max bottom-10 ">
+        <MotionTransition position = "right" className="fixed z-40 flex-col items-center justify-center w-full mt-auto h-max bottom-10 ">
             <nav>
                 <div className="flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm">
                 {/*Itera sobre los elementos de navegación definidos y los renderiza como un botón clickeable */}
@@ -32,7 +33,7 @@ const Navbar = () =>{
                 </div>
 
             </nav>
-        </div>
+        </MotionTransition>
     )
 }
 
