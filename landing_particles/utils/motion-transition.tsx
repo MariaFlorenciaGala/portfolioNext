@@ -1,7 +1,19 @@
-/**Constantes que generarán las transiciones */
+/**
+ * MotionTransition component
+ * 
+ * Archivo que contiene variantes de animacion reutilizables para la pagina utilizando Framer motion
+ * 
+ * Objetivo:
+ * -Centralizar aplicaciones
+ * -Reutilizacion de lógica
+ * -Mantener el código limpio y escalable
+ */
+import { Variants } from "motion"
 
-//Ésta transición será la encargada de cargar la página completa
-export const transitionVariablePage = {
+/*Transición para cambio de página
+* Genera un efecto barrido horizontal que cubre la pantalla durante la navegación entre rutas
+*/
+export const transitionVariablePage: Variants = {
     initial: {
         x: "100%",
         width:"100%"
@@ -16,8 +28,12 @@ export const transitionVariablePage = {
     },
 }
 
-//Ésta transición será la encargada de cargar los objetos que van a ir apareciendo
-export const  fadeIn = (position:string) => {
+/*Animación de entrada con efecto fade + desplazamiento
+* Aplica una transición suave donde el elemento:
+ -Aparece (opacity
+ -Se desplaza desde una dirección específica)
+*/
+export const fadeIn = (position:string): Variants => {
     return {
         visible:{
             y:0,
@@ -28,8 +44,9 @@ export const  fadeIn = (position:string) => {
                 duration:1.4,
                 delay:0.5,
                 ease:[0.25,0.25,0.25,0.75]
-            }
+            } as const,//asegura el tipado correcto
         },
+        //Estado antes de aparecer
         hidden:{
             y:position == "bottom" ? -80 : 0,
             x:position == "right" ? 80 : 0,
@@ -39,7 +56,7 @@ export const  fadeIn = (position:string) => {
                 duration:1.4,
                 delay:0.5,
                 ease:[0.25,0.25,0.25,0.75]
-            }
+            } as const,
         },
 
     }
