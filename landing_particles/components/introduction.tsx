@@ -3,10 +3,12 @@
  * Sección principal del portfolio
  * - Muestra el avatar con una frase con animación
  * - Genera impacto, llama la atención
+ * - Guiar al usuario hacia acciones principales (ver proyectos / contacto)
+ * 
  * Características:
  * - Uso de next/image para optimizar la imagen
  * - Animación del texto con react type animation
- * 
+ *
  */
 'use client'
 
@@ -16,7 +18,7 @@ import { TypeAnimation } from "react-type-animation";
 const Introduction = () => {
     return(
         <div className="z-20 w-full bg-darkBg/60">
-            <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
+            <div className="z-20 grid items-center p-6 py-20 md:py-0 md:grid-cols-2 w-auto h-full">
                 <Image src="/home-1.png" priority width={270} height={270} alt="Avatar" />
                 <div className="flex flex-col justify-center max-w-md">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10"> Si puedes pensarlo,
@@ -36,6 +38,7 @@ const Introduction = () => {
                         speed={50}
                         repeat={Infinity}
                         className='block font-bold text-secondary' 
+                        aria-live="polite"
                     />
                     </h1>
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
