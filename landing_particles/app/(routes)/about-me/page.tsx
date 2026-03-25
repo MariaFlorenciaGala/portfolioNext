@@ -1,13 +1,13 @@
 import TransitionPage from "@/components/transition-page"
 import ContainerPage from "@/components/container"
-import Image from "next/image";
+import ImageAboutMe from "@/components/image-about-me"
 
 const AboutMe = () => {
     return(
         <>
             <TransitionPage />
             <ContainerPage>
-                <Image src="/portfolio.png" width={250} height={250} className="flex" alt="Image avatar" />
+                <ImageAboutMe/>
                 <p></p>
             </ContainerPage>
         </>
