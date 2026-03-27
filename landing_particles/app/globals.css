@@ -36,3 +36,7 @@ main {
 @utility text-balance {
     text-wrap: balance
 }
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 10px;
+}
