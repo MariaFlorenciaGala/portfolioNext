@@ -62,10 +62,17 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
                     modules={[Pagination, FreeMode]}
                     className="h-380px md:h-300px w-270px md:w-550px"
                 >
-                    {technologies.map((technology, index) => (
+                    {technologies && technologies.map((technology, index) => (
+                        technology.icon ? (
                             <SwiperSlide key={index}>
-                                <Image src={technology.icon} alt="Icono de tecnología" width={200} height={200} className="mx-auto rounded-full" />
+                                <Image  src={technology.icon}
+                                        alt="Icono de tecnología" 
+                                        width={200} 
+                                        height={200} 
+                                        className="mx-auto rounded-full" 
+                                />
                             </SwiperSlide>
+                        ):null
                         ))}
                 </Swiper>
             </div>
