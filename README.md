@@ -9,7 +9,7 @@ Este es mi portfolio personal como desarrolladora, donde muestro mis proyectos, 
 
 ## Preview
 
-![Preview](./public/preview.jpg)
+![Preview](.//public/preview.jpg)
 
 ## Tecnologías que he usado en este proyecto
 
