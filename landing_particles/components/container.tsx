@@ -1,3 +1,5 @@
+"use client";
+
 /**Container components
  * Aplica las props de los estilos para no repetilos en cada pagina
  */

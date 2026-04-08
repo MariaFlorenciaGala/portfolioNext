@@ -1,3 +1,4 @@
+"use client";
 /**
  * Introduction component
  * Sección principal del portfolio
