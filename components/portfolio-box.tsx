@@ -31,14 +31,14 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
     return (
         <div
             key={id}
-            className="group relative overflow-hidden rounded-xl h-[300px] border border-white/20 hover:border-secondary/50 transition-colors duration-200 cursor-pointer"
+            className="group relative overflow-hidden rounded-xl h-[300px] bg-[#0d0d1a] border border-white/20 hover:border-secondary/50 transition-colors duration-200 cursor-pointer"
         >
             {/* Imagen de fondo — siempre visible en desktop */}
             <Image
                 src={image}
                 alt={title}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
             />
 
             {/* Overlay: siempre visible en mobile, slide-up en hover en desktop */}
