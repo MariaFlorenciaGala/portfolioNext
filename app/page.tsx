@@ -11,10 +11,8 @@ import TransitionPage from "@/components/transition-page"
 export default function Home() {
   return (
     <main>
-      {/*Componente de transición entre páginas */}
       <TransitionPage />
-      <div className="flex min-h-100vh h-full bg-no-repeat bg-gradient-cover">
-        {/*Fondo animado de partículas */}
+      <div className="flex min-h-screen bg-no-repeat bg-gradient-cover">
         <CoverParticles />
         <Introduction />
       </div>

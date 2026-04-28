@@ -20,8 +20,15 @@ const Introduction = () => {
     return(
         <div className="z-20 w-full bg-darkBg/60">
             <div className="z-20 grid items-center p-6 py-20 md:py-0 md:grid-cols-2 w-auto h-full">
-                <Image src="/home-1.png" priority width={270} height={270} alt="Avatar" />
-                <div className="flex flex-col justify-center max-w-md">
+                <Image
+                    src="/home-1.png"
+                    priority
+                    width={500}
+                    height={500}
+                    alt="Avatar"
+                    className="mx-auto w-[140px] h-auto sm:w-[180px] md:w-[320px] md:self-end md:pb-20 md:ml-[240px]"
+                />
+                <div className="flex flex-col justify-center max-w-md self-center">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10"> Si puedes pensarlo,
                     <br />
                     <TypeAnimation

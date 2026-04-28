@@ -35,7 +35,7 @@ export const socialNetworks = [
     {
         id: 3,
         logo: <CgMail size={35} strokeWidth={0} />,
-        src: "https:mariaflorenciagala@gmail.com",
+        src: "mailto:mariaflorenciagala8@gmail.com",
     },
 
 ];
@@ -74,8 +74,8 @@ export const dataProjects = [
     {
         id: 1,
         title: "Portfolio",
-        image:"/work-1.jpeg",
-        description:"Creación de portfolio personal con ",
+        image:"/work-1.jpg",
+        description:"Creación de portfolio personal con Next.js, agregué animacion de partículas y busqué una estética atractiva visualmente.",
         features: [
             "Arquitectura limpia",
             "Componentización",
@@ -95,87 +95,39 @@ export const dataProjects = [
 
         ],
         date_end: "30/03/2026",
-        urlGitHub: "",
-        urlDemo:"",
+        urlGitHub: "https://github.com/MariaFlorenciaGala/portfolioNext.git",
+        urlDemo:"https://mariaflorenciagala.netlify.app/",
     },    
     {
         id: 2,
-        title: "Datos Quini",
+        title: "ObraPro",
         image:"/work-2.jpeg",
-        description:"Extractor de datos depágina de Quini 6 , actualiza a la fecha, crea una base de datos para prubas con IA",
+        description:"Sitio web de una sola página para ObraPro, empresa de servicios especializados con cobertura en Córdoba, Argentina.",
         features: [
-            "Arquitectura limpia",
-            "Componentización",
-            "Manejo óptimo de datos",
-            "Utilización de Frame motion + NPM particles.",
-            "UI estructurada"
+            "Hero con estadísticas clave y CTAs principales",
+            "Grilla de 7 servicios con animaciones al hacer scroll",
+            "Sección educativa sobre tecnología Cool Roof",
+            "Por qué elegirnos (4 pilares de valor)",
+            "Zonas de cobertura en Córdoba",
+            "CTA final + botón flotante de WhatsApp",
             ],
         technologies:[
             {
-                name: "Python",
-                icon:"",
+                name: "HTML5",
+                icon:"/html5.svg",
             },
-                        {
-                name: "Otro",
-                icon:"",
-            },
-
-        ],
-        date_end: "30/03/2025",
-        urlGitHub: "",
-        urlDemo:"",
-    }, 
-    {
-        id: 3,
-        title: "Gato",
-        image:"/work-3.jpeg",
-        subtitle: "",
-        description:"Extractor de datos depágina de Quini 6 , actualiza a la fecha, crea una base de datos para prubas con IA",
-        features: [
-            "",
-            "Python",
-            ""
-            ],
-        technologies:[
             {
-                name: "Python",
-                icon:"",
+                name: "CSS3",
+                icon:"/css3.svg",
             },
-                        {
-                name: "Otro",
-                icon:"",
-            },
-
-        ],
-        date_end: "30/03/2025",
-        urlGitHub: "",
-        urlDemo:"",
-    }, 
-    {
-        id: 4,
-        title: "Otro gato",
-        image:"/work-4.jpeg",
-        subtitle: "",
-        description:"Extractor de datos depágina de Quini 6 , actualiza a la fecha, crea una base de datos para prubas con IA",
-        features: [
-            "",
-            "Python",
-            ""
-            ],
-        technologies:[
             {
-                name: "Python",
-                icon:"",
+                name: "JavaScript (ES6+)",
+                icon:"/javascript.svg",
             },
-                        {
-                name: "Otro",
-                icon:"",
-            },
-
         ],
-        date_end: "30/03/2025",
-        urlGitHub: "",
-        urlDemo:"",
+        date_end: "28/04/2026",
+        urlGitHub: "https://github.com/MariaFlorenciaGala/obraPro.git",
+        urlDemo:"https://obraprocba.netlify.app/",
     }, 
 ]
 
