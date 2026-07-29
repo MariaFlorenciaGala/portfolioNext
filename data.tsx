@@ -73,41 +73,38 @@ export const itemsNavbar = [
 export const dataProjects = [
     {
         id: 1,
-        title: "Portfolio",
-        image:"/work-1.jpg",
-        description:"Creación de portfolio personal con Next.js, agregué animacion de partículas y busqué una estética atractiva visualmente.",
+        title: "Liga De Clubes",
+        image:"/work-3.jpg",
+        description:"Aplicación para gestionar información de ligas de clubes, trabajo práctico de C#.",
         features: [
-            "Arquitectura limpia",
-            "Componentización",
-            "Manejo óptimo de datos",
-            "Utilización de Frame motion + NPM particles.",
-            "UI estructurada"
+            "Gestión de información de ligas de clubes con interfáz intuitiva",
+            "Funcionalidades de búsqueda, filtrado de datos, informes y estadísticas",
+            "Importación de datos desde archivos externos",
+            "Arquitectura MVP/Capas(Models, Services, Forms, Controls separados)",
             ],
         technologies:[
             {
-                name: "Next.js",
-                icon:"/next.png",
+                name: "C#",
+                icon:"/csharp.svg",
             },
-                        {
-                name: "Tailwind",
-                icon:"/tailwindcss.svg",
+            {
+                name: ".NET Framework 4.8 ",
+                icon:"/dotnet.svg",
             },
-
         ],
-        date_end: "30/03/2026",
-        urlGitHub: "https://github.com/MariaFlorenciaGala/portfolioNext.git",
-        urlDemo:"https://mariaflorenciagala.netlify.app/",
-    },    
+        date_end: "28/06/2026",
+        urlGitHub: "https://github.com/MariaFlorenciaGala/LigaDeClubesTP2",
+        urlDemo: "",
+        urlDownload: "/LigaDeClubes.zip",
+    }, 
     {
         id: 2,
         title: "ObraPro",
         image:"/work-2.jpeg",
         description:"Sitio web de una sola página para ObraPro, empresa de servicios especializados con cobertura en Córdoba, Argentina.",
         features: [
-            "Hero con estadísticas clave y CTAs principales",
             "Grilla de 7 servicios con animaciones al hacer scroll",
             "Sección educativa sobre tecnología Cool Roof",
-            "Por qué elegirnos (4 pilares de valor)",
             "Zonas de cobertura en Córdoba",
             "CTA final + botón flotante de WhatsApp",
             ],
@@ -129,6 +126,38 @@ export const dataProjects = [
         urlGitHub: "https://github.com/MariaFlorenciaGala/obraPro.git",
         urlDemo:"https://obraprocba.netlify.app/",
     }, 
+    {
+        id: 3,
+        title: "Portfolio",
+        image:"/work-1.jpg",
+        description:"Creación de portfolio personal con Next.js, agregué animacion de partículas y busqué una estética atractiva visualmente.",
+        features: [
+            "Arquitectura limpia",
+            "Componentización",
+            "Manejo óptimo de datos",
+            "Utilización de Frame motion + NPM particles.",
+            "UI estructurada"
+            ],
+        technologies:[
+            {
+                name: "Next.js",
+                icon:"/next.png",
+            },
+            {
+                name: "Tailwind",
+                icon:"/tailwindcss.svg",
+            },
+            {
+                name: "TypeScript",
+                icon:"/typescript.svg",
+            },
+
+        ],
+        date_end: "30/03/2026",
+        urlGitHub: "https://github.com/MariaFlorenciaGala/portfolioNext.git",
+        urlDemo:"https://mariaflorenciagala.netlify.app/",
+    },  
+
 ]
 
 

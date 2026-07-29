@@ -19,13 +19,14 @@ interface PortfolioBoxProps {
         date_end: string,
         urlGitHub: string,
         urlDemo: string,
+        urlDownload?: string,
     }
 }
 
 const PortfolioBox = ({ data }: PortfolioBoxProps) => {
-    const { id, title, image, description, features, technologies, urlGitHub, urlDemo } = data
+    const { id, title, image, description, features, technologies, urlGitHub, urlDemo, urlDownload, } = data
 
-    const visibleFeatures = features.filter(f => f.trim()).slice(0, 3)
+    const visibleFeatures = features.filter(f => f.trim()).slice(0, 4)
     const techWithIcons = technologies.filter(t => t.icon)
 
     return (
@@ -76,15 +77,25 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
                     >
                         GitHub
                     </Link>
-                    <Link
-                        href={urlDemo || "#"}
-                        target={urlDemo ? "_blank" : "_self"}
-                        onClick={e => { if (!urlDemo) e.preventDefault() }}
-                        className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
-                    >
-                        Demo
-                    </Link>
-                </div>
+                     {urlDownload ? (
+                        <a
+                            href={urlDownload}
+                            download
+                            className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
+                        >
+                            Descargar app
+                        </a>
+                     ):(        
+                        <Link
+                            href={urlDemo || "#"}
+                            target={urlDemo ? "_blank" : "_self"}
+                            onClick={e => { if (!urlDemo) e.preventDefault() }}
+                            className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
+                        >
+                            Demo
+                        </Link>
+                        )}
+                </div>                
             </div>
         </div>
     )
