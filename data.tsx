@@ -93,7 +93,7 @@ export const dataProjects = [
             },
         ],
         date_end: "28/06/2026",
-        urlGitHub: "https://github.com/MariaFlorenciaGala/LigaDeClubesTP2",
+        urlGitHub: "https://github.com/MariaFlorenciaGala/LigaDeClubes",
         urlDemo: "",
         urlDownload: "/LigaDeClubes.zip",
     }, 
