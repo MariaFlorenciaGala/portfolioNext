@@ -99,6 +99,35 @@ export const dataProjects = [
     }, 
     {
         id: 2,
+        title: "Comentarios automáticos",
+        image:"/work-4.jpg",
+        description:"Sistema 'automatizador' de comentarios de Youtube que clasifica cada comentario y le responde. Como base de datos lo conecté a supabase y con chatGPT como genio clasificador de comentarios.",
+        features: [
+            "Evalua el tipo de comentario",
+            "Responde automáticamnete",
+            "Conexión a supabase como base de datos",
+            "Utiliza chatGPT para clasificar y generar la respuesta",
+            ],
+        technologies:[
+            {
+                name: "N8N",
+                icon:"/n8n.svg",
+            },
+            {
+                name: "Supabase",
+                icon:"/supabase.svg",
+            },
+            {
+                name: "ChatGPT-API",
+                icon:"/chatgpt.svg",
+            },
+        ],
+        date_end: "28/12/2025",
+        urlDemo: "",
+        urlDownload: "",
+    }, 
+    {
+        id: 3,
         title: "ObraPro",
         image:"/work-2.jpeg",
         description:"Sitio web de una sola página para ObraPro, empresa de servicios especializados con cobertura en Córdoba, Argentina.",
@@ -127,7 +156,7 @@ export const dataProjects = [
         urlDemo:"https://obraprocba.netlify.app/",
     }, 
     {
-        id: 3,
+        id: 4,
         title: "Portfolio",
         image:"/work-1.jpg",
         description:"Creación de portfolio personal con Next.js, agregué animacion de partículas y busqué una estética atractiva visualmente.",

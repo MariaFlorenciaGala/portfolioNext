@@ -17,8 +17,8 @@ interface PortfolioBoxProps {
         features: string[],
         technologies: Technology[],
         date_end: string,
-        urlGitHub: string,
-        urlDemo: string,
+        urlGitHub?: string,
+        urlDemo?: string,
         urlDownload?: string,
     }
 }
@@ -69,14 +69,20 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
                 )}
 
                 <div className="flex gap-3 mt-auto">
-                    <Link
-                        href={urlGitHub || "#"}
-                        target={urlGitHub ? "_blank" : "_self"}
-                        onClick={e => { if (!urlGitHub) e.preventDefault() }}
-                        className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-slate-600 hover:bg-slate-500 transition-colors"
-                    >
-                        GitHub
-                    </Link>
+                    {urlGitHub ? (
+                        <Link
+                            href={urlGitHub || "#"}
+                            target={urlGitHub ? "_blank" : "_self"}
+                            onClick={e => { if (!urlGitHub) e.preventDefault() }}
+                            className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-slate-600 hover:bg-slate-500 transition-colors"
+                        >
+                            GitHub                    
+                        </Link>
+                    ) : (
+                        <span className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-slate-600/50 cursor-not-allowed">
+                        
+                        </span>
+                    )}   
                      {urlDownload ? (
                         <a
                             href={urlDownload}
@@ -85,16 +91,18 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
                         >
                             Descargar app
                         </a>
-                     ):(        
-                        <Link
-                            href={urlDemo || "#"}
-                            target={urlDemo ? "_blank" : "_self"}
-                            onClick={e => { if (!urlDemo) e.preventDefault() }}
-                            className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
-                        >
-                            Demo
-                        </Link>
-                        )}
+                     ):(  
+                        urlDemo && (
+                            <Link
+                                href={urlDemo || "#"}
+                                target={urlDemo ? "_blank" : "_self"}
+                                onClick={e => { if (!urlDemo) e.preventDefault() }}
+                                className="flex-1 text-center py-2 text-xs font-medium rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
+                            >
+                                Demo
+                            </Link>
+                        )
+                    )}
                 </div>                
             </div>
         </div>
