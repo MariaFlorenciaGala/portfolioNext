@@ -155,8 +155,37 @@ export const dataProjects = [
         urlGitHub: "https://github.com/MariaFlorenciaGala/obraPro.git",
         urlDemo:"https://obraprocba.netlify.app/",
     }, 
-    {
+        {
         id: 4,
+        title: "Abogada Paulina Calvo",
+        image:"/work-5.jpg",
+        description:"Landing page destinada a captacion de clientes online, simple y con colores que transmiten profesionalismo y cercanía.",
+        features: [
+            "Formulario de contacto corto",
+            "Todos los botones con mensaje para contacto por el anuncio",
+            "Tiene siete servicios: divorcio, cuota alimentaria, cuidado de los hijos, sucesiones, unión convivencial, convenios y redacción de documentos",
+            ],
+        technologies:[
+            {
+                name: "HTML5",
+                icon:"/html5.svg",
+            },
+            {
+                name: "CSS3",
+                icon:"/css3.svg",
+            },
+            {
+                name: "JavaScript (ES6+)",
+                icon:"/javascript.svg",
+            },
+        ],
+        date_end: "19/09/2026",
+        urlGitHub: "https://github.com/MariaFlorenciaGala/PaulinaCalvoAbogada.git",
+        urlDemo:"https://paulinacalvo-abogada.netlify.app/",
+    },    
+
+    {
+        id: 5,
         title: "Portfolio",
         image:"/work-1.jpg",
         description:"Creación de portfolio personal con Next.js, agregué animacion de partículas y busqué una estética atractiva visualmente.",
