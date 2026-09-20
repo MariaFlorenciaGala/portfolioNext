@@ -182,6 +182,33 @@ export const dataProjects = [
         date_end: "19/09/2026",
         urlGitHub: "https://github.com/MariaFlorenciaGala/PaulinaCalvoAbogada.git",
         urlDemo:"https://paulinacalvo-abogada.netlify.app/",
+    }, 
+            {
+        id: 4,
+        title: "Patricia Batalla",
+        image:"/work-6.jpg",
+        description:"Landing page destinada a captacion de clientes online, simple y con colores que transmiten profesionalismo y cercanía.",
+        features: [
+            "Descripcion de servicios",
+            "Contacto directo a Whatsapp",
+            ],
+        technologies:[
+            {
+                name: "HTML5",
+                icon:"/html5.svg",
+            },
+            {
+                name: "CSS3",
+                icon:"/css3.svg",
+            },
+            {
+                name: "JavaScript (ES6+)",
+                icon:"/javascript.svg",
+            },
+        ],
+        date_end: "25/09/2026",
+        urlGitHub: "https://github.com/MariaFlorenciaGala/patriciaBatalla",
+        urlDemo:"https://patriciabatalla-depilacion.netlify.app/",
     },    
 
     {
