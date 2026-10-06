@@ -3,28 +3,23 @@
  * Características:
  * -Renderiza la trancisión entre páginas
  * -Muestra el contenedor principal
- * -Organiza y lista los proyectos dinamicamente
+ * -Organiza los proyectos por categoría con filtros (ProjectsFilter)
  */
 
 import TransitionPage from "@/components/transition-page"
 import ContainerPage from "@/components/container"
-import PortfolioBox from "@/components/portfolio-box"
-import { dataProjects } from "@/data"
+import ProjectsFilter from "@/components/projects-filter"
 
 const Projects = () => {
     return(
         <>
             <TransitionPage />
 
-<ContainerPage>
+            <ContainerPage>
                 <h1 className="text-2xl leading-tight text-center md:text-4xl mb-8">
                     Proyectos <span className="font-bold text-secondary">realizados</span>
                 </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                    {dataProjects.map((data) => (
-                        <PortfolioBox key={data.id} data={data}/>
-                    ))}
-                </div>
+                <ProjectsFilter />
             </ContainerPage>
         </>
     )
