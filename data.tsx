@@ -305,7 +305,7 @@ export const dataProjects: {
     {
         id: 7,
         title: "Portfolio",
-        category: "apps",
+        category: "web",
         image:"/work-1.jpg",
         description:"Creación de portfolio personal con Next.js, agregué animacion de partículas y busqué una estética atractiva visualmente.",
         features: [
